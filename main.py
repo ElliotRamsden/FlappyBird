@@ -10,10 +10,15 @@ clock = pygame.time.Clock()
 
 
 def main():
-    game_instance = Game()
+    game_instance = Game(screen)
     running = True
 
     while running is True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                running = False
+
+        game_instance.draw()
         clock.tick(30)
 
     pygame.quit()
