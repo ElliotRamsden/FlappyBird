@@ -6,6 +6,8 @@ SCREEN_HEIGHT = 512
 
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+favicon = pygame.image.load(r"assets/favicon.ico")
+pygame.display.set_icon(favicon)
 clock = pygame.time.Clock()
 
 
