@@ -10,7 +10,7 @@ clock = pygame.time.Clock()
 
 
 def main():
-    game_instance = Game(screen)
+    game_instance = Game(screen, SCREEN_WIDTH, SCREEN_HEIGHT)
     running = True
 
     while running is True:
