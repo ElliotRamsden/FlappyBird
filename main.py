@@ -20,6 +20,7 @@ def main():
             if event.type == pygame.QUIT:
                 running = False
 
+        game_instance.update()
         game_instance.draw()
         clock.tick(30)
 
