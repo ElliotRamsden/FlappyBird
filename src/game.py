@@ -14,12 +14,15 @@ class Game:
         self.screen_width = screen_width
         self.screen_height = screen_height
         self.bird = Bird(screen, screen_width, screen_height, FLOOR_HEIGHT)
-        self.score = 0
+        self.score = None
         self.background = pygame.image.load(random.choice([r"assets/sprites/background-day.png",
                                                            r"assets/sprites/background-night.png"]))
         self.floor = pygame.image.load(r"assets/sprites/base.png")
         self.floor_position_left = 0
         self.floor_position_right = screen_width
+
+    def display_title(self):
+        return self.score
 
     def check_collision(self):
         pass

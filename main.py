@@ -13,6 +13,8 @@ clock = pygame.time.Clock()
 
 def main():
     game_instance = Game(screen, SCREEN_WIDTH, SCREEN_HEIGHT)
+    window_title = "Get Ready!" if game_instance.display_title() is None else game_instance.display_title()
+    pygame.display.set_caption(f"Flappy Bird | {window_title}")
     running = True
 
     while running is True:
